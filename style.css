@@ -126,3 +126,46 @@ footer {
   text-align: center;
   color: var(--soil);
 }
+
+
+/* Herb search form */
+#herb-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+
+#herb-form label {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+
+#herb-name {
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem;
+  font: inherit;
+  border: 1px solid #777;
+  border-radius: 0.35rem;
+}
+
+#herb-form button {
+  padding: 0.65rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #38583b;
+  border-radius: 0.35rem;
+  background: #38583b;
+  color: white;
+}
+
+#herb-form button:hover {
+  background: #29432c;
+}
+
+#herb-name:focus-visible,
+#herb-form button:focus-visible {
+  outline: 3px solid #b36b00;
+  outline-offset: 3px;
+}

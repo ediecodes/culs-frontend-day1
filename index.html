@@ -32,11 +32,27 @@
      <img class="hero" src="images/garden.svg" alt="Two raised beds full of herbs, with a bee">
     </section>
 
-    <section id="herbs">
-      <h2>What grows here</h2>
-      <p class="count">Loading the herbs…</p>
-      <ul id="herbs-list" class="cards"></ul>
-    </section>
+    
+
+<section id="herbs">
+  <h2>Meet the herb</h2>
+
+  <form id="herb-form">
+    <label for="herb-name">Enter a herb name</label>
+    <input
+      id="herb-name"
+      name="herb"
+      type="text"
+      placeholder="e.g. basil"
+      required
+    >
+    <button type="submit">Show herb</button>
+  </form>
+
+  <p class="count" role="status" aria-live="polite">Choose an herb to see its details.</p>
+  <article id="herb-details"></article>
+</section>
+
 
     <section id="visit">
       <h2>Visit</h2>
