@@ -63,3 +63,40 @@ app.js        what it does
 data/         the herbs, as JSON
 images/       the logo and a picture
 ```
+
+## Day 3: Interactive herb details
+
+The website displays one herb at a time. Enter a herb name in the form and select **Show herb**. You can also open a specific herb using a URL hash, for example `index.html#basil`.
+
+### Herb data
+
+Each herb has its own JSON file inside the `data/` directory. The filename must match the herb name in lowercase.
+
+Examples:
+- `data/basil.json`
+- `data/rosemary.json`
+- `data/chives.json`
+
+Each file contains one JSON object with these four required properties:
+
+| Property | Description | Example |
+|---|---|---|
+| `name` | Common name of the herb | `"Basil"` |
+| `latin` | Scientific name | `"Ocimum basilicum"` |
+| `use` | Description of common uses | `"Tomatoes, pesto and anything summery."` |
+| `life` | Life cycle | `"annual"` |
+
+Example of a complete herb file:
+
+```json
+{
+  "name": "Basil",
+  "latin": "Ocimum basilicum",
+  "use": "Tomatoes, pesto and anything summery.",
+  "life": "annual"
+}
+```
+
+To add another herb, create a JSON file in `data/` with the same four properties, then open it using a matching URL hash, such as `index.html#thyme`.
+
+The website uses JavaScript `fetch()` to request the JSON file from the web server. If the herb cannot be loaded, the page displays an error message.
