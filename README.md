@@ -2,7 +2,7 @@
 
 A small website for day 1 of **Frontend Development**.
 
-It is fixed. @ediecodes Edith Tembo
+It is fixed by @ediecodes Edith Tembo
 
 ## What you need
 
